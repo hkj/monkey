@@ -48,4 +48,4 @@ package github.com/hkj/monkey/lexer (test): package monkey/token is not in GOROO
 FAIL	github.com/hkj/monkey/lexer [setup failed]
 FAIL
 ```
-正しいのか、まだ分からないけれど、テストが失敗するところまではこれた。
+正しいのか、まだ分からないけれど、テストが失敗するところまではこれた。でもpackegeで怒られてるな。さてどうしたものやら。
