@@ -1,3 +1,3 @@
-module github.com/hkj/monkey
+module monkey
 
 go 1.14

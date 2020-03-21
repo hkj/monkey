@@ -25,15 +25,15 @@ Example usage:
 
 Run 'go help mod init' for more information.
 ```
-だめだった。色々見ると、go mod initの次にモジュール名を付けるべきらしい。なんだかgithubのURLみたいなの書いてるのが多いのでそうしてみる。
+だめだった。色々見ると、go mod initの次にモジュール名を付けるべきらしい。とりあえず作業フォルダのトップレベルの名前を入れると良いっぽい。
 ```shell
-go mod init https://github.com/hkj/monkey
+cd monkey
+go mod init monkey
 go: malformed import path "https://github.com/hkj/monkey": double slash
 
 go mod init github.com/hkj/monkey
-go: creating new go.mod: module github.com/hkj/monkey
+go: creating new go.mod: module monkey
 ```
-URLそのものでは怒られたが、httpsなどを取って、githubから初めると作られた。
 
 満を持してのtest実行
 ```shell
