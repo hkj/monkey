@@ -13,7 +13,7 @@ type Lexer struct {
 func New(input string) *Lexer {
 	l := &Lexer{input: input}
 	l.readChar()
-	return 1
+	return l
 }
 
 // reachChar ：次の一文字を読んで、input文字列の現在位置を進めること.

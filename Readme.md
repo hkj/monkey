@@ -25,7 +25,9 @@ Example usage:
 
 Run 'go help mod init' for more information.
 ```
-だめだった。色々見ると、go mod initの次にモジュール名を付けるべきらしい。とりあえず作業フォルダのトップレベルの名前を入れると良いっぽい。
+* だめだった。色々見ると、go mod initの次にモジュール名を付けるべきらしい。とりあえず作業フォルダのトップレベルの名前を入れると良いっぽい。
+* 今回であれば monkeyとなる。そうすると、importで、monkey/tokenのように、monkeyから指定することができるようになった。
+
 ```shell
 cd monkey
 go mod init monkey
