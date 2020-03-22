@@ -29,9 +29,6 @@ Run 'go help mod init' for more information.
 ```shell
 cd monkey
 go mod init monkey
-go: malformed import path "https://github.com/hkj/monkey": double slash
-
-go mod init github.com/hkj/monkey
 go: creating new go.mod: module monkey
 ```
 
