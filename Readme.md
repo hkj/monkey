@@ -44,8 +44,10 @@ $GOPATH/go.mod exists but should not
 ```shell
 unset GOPATH
 go test ./lexer
-package github.com/hkj/monkey/lexer (test): package monkey/token is not in GOROOT (/usr/local/Cellar/go/1.14/libexec/src/monkey/token)
-FAIL	github.com/hkj/monkey/lexer [setup failed]
+# monkey/lexer [monkey/lexer.test]
+lexer/lexer.go:16:9: cannot use 1 (type int) as type *Lexer in return argument
+lexer/lexer_test.go:31:11: l.NextToken undefined (type *Lexer has no field or method NextToken)
+FAIL	monkey/lexer [build failed]
 FAIL
 ```
-正しいのか、まだ分からないけれど、テストが失敗するところまではこれた。でもpackegeで怒られてるな。さてどうしたものやら。
+正しいのか、まだ分からないけれど、テストが失敗するところまではこれた。
