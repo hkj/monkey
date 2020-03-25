@@ -5,7 +5,7 @@
 * Go言語はTour Goをほんの少しやっただけ。
 
 ## 作業メモ
-### go test ./lexerでやったこと
+### go test ./lexerで当初やったこと
 ```shell
 go test ./lexer
 
@@ -44,7 +44,6 @@ $GOPATH/go.mod exists but should not
 unset GOPATH
 go test ./lexer
 # monkey/lexer [monkey/lexer.test]
-lexer/lexer.go:16:9: cannot use 1 (type int) as type *Lexer in return argument
 lexer/lexer_test.go:31:11: l.NextToken undefined (type *Lexer has no field or method NextToken)
 FAIL	monkey/lexer [build failed]
 FAIL
